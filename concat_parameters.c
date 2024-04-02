@@ -11,7 +11,7 @@
 #include <unistd.h>
 #include "phoenix.h"
 
-static int my_strln(char *str)
+int my_strln(char *str)
 {
     int length = 0;
 
@@ -65,7 +65,6 @@ void show_string(char *str)
         write(1, str, my_strln(str));
     }
 }
-
 
 int main(int ac, char **av)
 {
